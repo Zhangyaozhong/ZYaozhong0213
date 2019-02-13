@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:gravity="center_horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/yuanxing_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="圆形图" />
+
+        <Button
+            android:id="@+id/yuanjiao_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="圆角图" />
+
+        <Button
+            android:id="@+id/proportion_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="宽高比1.2" />
+
+        <Button
+            android:id="@+id/gif_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="加载动图" />
+    </LinearLayout>
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/sdv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:viewAspectRatio="0.5"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/get_btn"
+        android:text="获取注解的值"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/add_btn"
+        android:text="反射添加集合"/>
+
+</LinearLayout>
